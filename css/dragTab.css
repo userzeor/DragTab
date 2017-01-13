@@ -1,0 +1,67 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	background-color: #efeff4;
+	overflow-x: hidden;
+}
+a{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+/*::-webkit-scrollbar {display:none}*/ 
+.dragTab_header{
+	position: fixed;
+	height:48px ;
+	top: 0;
+	width: 100%;
+	font-size: 0;
+	background-color: #5FFFD4;
+	overflow: hidden;
+	z-index: 10005;
+	transform: translateZ(0px);
+}
+.dragTab_header_scroll{
+	white-space: nowrap;
+	transform: translate3d(0px,0px,0px);
+}
+
+.header_title{
+	display: inline-block;
+	height: 100%;
+	color: #DD524D;
+	line-height: 48px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+}
+.title_active{
+	color: #999999;
+}
+.dragTab_iscroll{
+	position: fixed;
+	top: 48px;
+	height: 2px;
+	z-index: 10005;
+	background-color: #999999;
+}
+.dragTab_content{
+	position: relative;
+	top: 48px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.divmap_content{
+	margin: 10px 10px;
+	padding: 10px;
+	background-color: #FFFFFF;
+}
+.dragTab_wrapGroup{
+	/*position: absolute;*/
+	height: 100%;
+	font-size: 0;
+	white-space: nowrap;
+}
+.dragTab_wrap{
+	position: absolute;
+	display: inline-block;
+	/*top: 48px;*/
+	font-size: 14px;
+}
